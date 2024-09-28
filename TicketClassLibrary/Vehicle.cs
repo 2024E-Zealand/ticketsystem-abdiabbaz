@@ -21,16 +21,24 @@ namespace TicketClassLibrary
         /// <summary>
         /// This is a property that gets the "LicensePlate and can be set to whatever LicensePlate number."
         /// </summary>
-		protected string LicensePlate
+		public string LicensePlate
         {
             get { return _licensePlate; }
-            set { _licensePlate = value; }
+            set 
+            { 
+                if (string.IsNullOrWhiteSpace(value) || value.Length > 7)
+                {
+                    throw new ArgumentOutOfRangeException("Licenseplate must be under 7 characters.");
+                }
+
+                _licensePlate = value; 
+            }
         }
 
         /// <summary>
         /// This is a property that gets and sets the Date
         /// </summary>
-        protected DateTime Date
+        public DateTime Date
         {
             get { return _date; }
             set { _date = value; }
