@@ -9,6 +9,7 @@ using System.Diagnostics.CodeAnalysis;
 
 namespace TicketClassLibrary.Tests
 {
+    [ExcludeFromCodeCoverage]
     [TestClass()]
     public class MCTests
     {
@@ -49,6 +50,41 @@ namespace TicketClassLibrary.Tests
             double actualResult = mc.Price();
 
             Assert.AreEqual(expectedResult, actualResult);
+        }
+
+
+        [TestMethod()]
+        public void Price_With_BroBizz_Valid()
+        {
+            var mc = new MC();
+
+            mc.HasBroBizz = true;
+
+            double priceWithBroBizz = mc.Price();
+
+            double expectedPrice = 125 * 0.95;
+
+            double delta = 0.01;
+
+            Assert.AreEqual(expectedPrice, priceWithBroBizz, delta);
+
+        }
+
+        [TestMethod()]
+        public void Price_Without_BroBizz_Valid()
+        {
+            var mc = new MC();
+
+            mc.HasBroBizz = false;
+
+            double priceWithBroBizz = mc.Price();
+
+            double expectedPrice = 125;
+
+            double delta = 0.01;
+
+            Assert.AreEqual(expectedPrice, priceWithBroBizz, delta);
+
         }
 
         [TestMethod()]

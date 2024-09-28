@@ -17,7 +17,6 @@ namespace TicketClassLibrary
 
         private DateTime _date;
 
-
         /// <summary>
         /// This is a property that gets the "LicensePlate and can be set to whatever LicensePlate number."
         /// </summary>
@@ -34,6 +33,11 @@ namespace TicketClassLibrary
                 _licensePlate = value; 
             }
         }
+
+        /// <summary>
+        /// This propery can be used to see if the vehicle has Brobizz
+        /// </summary>
+        public bool HasBroBizz { get; set; }
 
         /// <summary>
         /// This is a property that gets and sets the Date

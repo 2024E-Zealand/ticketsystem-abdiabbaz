@@ -11,6 +11,10 @@ namespace TicketClassLibrary
         /// <returns>Returns the price 240</returns>
         public override double Price()
         {
+            if (HasBroBizz)
+            {
+                return 240 * 0.95;
+            }
             return 240;
         }
         /// <summary>
