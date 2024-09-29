@@ -2,6 +2,9 @@
 
 namespace TicketClassLibrary
 {
+    /// <summary>
+    /// This is a class that inherits from Vehicle
+    /// </summary>
     public class Car : Vehicle
     {
 
@@ -25,5 +28,6 @@ namespace TicketClassLibrary
         {
             return "Car";
         }
+
     }
 }

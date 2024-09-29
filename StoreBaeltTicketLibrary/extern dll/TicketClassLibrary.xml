@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>TicketClassLibrary</name>
+    </assembly>
+    <members>
+        <member name="M:TicketClassLibrary.Car.Price">
+            <summary>
+            This is a method to get the price.
+            </summary>
+            <returns>Returns the price 240</returns>
+        </member>
+        <member name="M:TicketClassLibrary.Car.VehicleType">
+            <summary>
+            This is a method to get the Vehicle type
+            </summary>
+            <returns>Returns a string named Car</returns>
+        </member>
+        <member name="M:TicketClassLibrary.MC.Price">
+            <summary>
+            This is a method to get the price.
+            </summary>
+            <returns>Returns the price 125</returns>
+        </member>
+        <member name="M:TicketClassLibrary.MC.VehicleType">
+            <summary>
+            This is a method to get the Vehicle type
+            </summary>
+            <returns>Returns a string named MC</returns>
+        </member>
+        <member name="F:TicketClassLibrary.Vehicle._licensePlate">
+            <summary>
+            This is a instance field called LisencePlate. It is used for property.
+            </summary>
+        </member>
+        <member name="F:TicketClassLibrary.Vehicle._date">
+            This is a instance field called Date. It is used for property.
+        </member>
+        <member name="P:TicketClassLibrary.Vehicle.LicensePlate">
+            <summary>
+            This is a property that gets the "LicensePlate and can be set to whatever LicensePlate number."
+            </summary>
+        </member>
+        <member name="P:TicketClassLibrary.Vehicle.HasBroBizz">
+            <summary>
+            This propery can be used to see if the vehicle has Brobizz
+            </summary>
+        </member>
+        <member name="P:TicketClassLibrary.Vehicle.Date">
+            <summary>
+            This is a property that gets and sets the Date
+            </summary>
+        </member>
+    </members>
+</doc>

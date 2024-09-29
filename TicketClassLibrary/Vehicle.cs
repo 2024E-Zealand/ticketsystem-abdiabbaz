@@ -48,8 +48,16 @@ namespace TicketClassLibrary
             set { _date = value; }
         }
 
+        /// <summary>
+        /// This method is not implented. But is used as a template for the subclasses
+        /// </summary>
+        /// <returns>Nothing</returns>
         public abstract double Price();
 
+        /// <summary>
+        /// This method is not implented. But is used as a template for the subclasses
+        /// </summary>
+        /// <returns>Nothing</returns>
         public abstract string VehicleType();
 
     }

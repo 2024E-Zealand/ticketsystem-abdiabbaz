@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace TicketClassLibrary
 {
+    /// <summary>
+    /// This is a class that inherits from Vehicle
+    /// </summary>
     public class MC : Vehicle
     {
 
