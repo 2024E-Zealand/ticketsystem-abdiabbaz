@@ -11,9 +11,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StoreBaeltTicketLibrary", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StoreBaeltTicketLibraryTests", "StoreBaeltTicketLibraryTests\StoreBaeltTicketLibraryTests.csproj", "{FF0669FF-74D0-40C1-B667-7FCA9A819150}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OresundbronLibrary", "OresundbronLibrary\OresundbronLibrary.csproj", "{AD69F930-9B8A-4498-82A5-54BEC13146AB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OresundbronLibrary", "OresundbronLibrary\OresundbronLibrary.csproj", "{AD69F930-9B8A-4498-82A5-54BEC13146AB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OresundbronLibraryTests", "OresundbronLibraryTests\OresundbronLibraryTests.csproj", "{57875148-2254-4E84-A600-1451183AB2D1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OresundbronLibraryTests", "OresundbronLibraryTests\OresundbronLibraryTests.csproj", "{57875148-2254-4E84-A600-1451183AB2D1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TCPserver", "TCPserver\TCPserver.csproj", "{1E81EB88-12B8-479F-B650-4D9C8908C899}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{57875148-2254-4E84-A600-1451183AB2D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{57875148-2254-4E84-A600-1451183AB2D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{57875148-2254-4E84-A600-1451183AB2D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1E81EB88-12B8-479F-B650-4D9C8908C899}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E81EB88-12B8-479F-B650-4D9C8908C899}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E81EB88-12B8-479F-B650-4D9C8908C899}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E81EB88-12B8-479F-B650-4D9C8908C899}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
