@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics.Metrics;
 using System.Linq;
 using System.Net;
 using System.Net.Http.Headers;
 using System.Net.Sockets;
 using System.Text;
+using System.Text.Json;
 using System.Threading.Tasks;
 
 namespace TCPserver
@@ -14,7 +16,7 @@ namespace TCPserver
 
         public void Start()
         {
-            TcpListener server = new TcpListener(IPAddress.Any, 3025);
+            TcpListener server = new TcpListener(IPAddress.Any, 2025);
             server.Start();
 
             Console.WriteLine("Server is running..");
@@ -33,6 +35,7 @@ namespace TCPserver
         {
             StreamReader sr = new StreamReader(client.GetStream());
             StreamWriter sw = new StreamWriter(client.GetStream());
+            Console.WriteLine($"Server is connected to Client {client.Client.RemoteEndPoint}");
 
             while (true)
             {
@@ -117,6 +120,5 @@ namespace TCPserver
                 }
             }
         }
-
     }
 }

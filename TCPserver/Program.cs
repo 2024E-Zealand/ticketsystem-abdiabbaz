@@ -1,10 +1,9 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿
 using TCPserver;
 
-Console.WriteLine("Hello, World!");
-
 Server server = new Server();
-
+ServerJson serverJson = new ServerJson(); 
+serverJson.Start();
 server.Start();
 
 Console.ReadKey();
